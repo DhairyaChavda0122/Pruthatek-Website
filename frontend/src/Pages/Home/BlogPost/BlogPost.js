@@ -41,7 +41,7 @@ function BlogPost(){
                 <hr />
                 <h4>{card.title}</h4>
                 <div className='profile dfsb'>
-                    <img src={card.img} alt="Image" />
+                    <img src={card.img} alt="blogcard" />
                     <div className='profile-info'>
                         <p>{card.name}</p>
                         <p className='dt'>{card.dt}</p>

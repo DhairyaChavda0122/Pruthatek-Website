@@ -32,12 +32,12 @@ function ClientsReview(){
                 <div className='review-photo'>
                     {/*  Division to create a blurry border  */}
                     <div className='image df'>
-                        <img src={rev.profileImg} alt="Image" />
+                        <img src={rev.profileImg} alt="client" />
                     </div>
                     <div className='backDesign' />
                 </div>
                 <div className='review-info'>
-                    <img />
+                    <img alt="quote" />
                     <h2>{rev.title}</h2>
                     <p>{rev.description}</p>
                     <div className='stars'>

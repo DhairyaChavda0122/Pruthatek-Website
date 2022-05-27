@@ -136,7 +136,19 @@
     color: #FFF;
     background-color: rgba(0, 0, 0, .7);
 }
-
+/* Harshil - Company slider */
+.our-companies img
+{
+    width: 10vw;
+    margin-right: 8vw;
+    filter: grayscale(100%);
+    padding: 3vw 0vw;
+}
+.our-companies img:hover
+{
+    cursor: pointer;
+    filter: grayscale(0%);
+}
 
 /*  -----   Images Changing using CSS   -----   */
 
@@ -321,6 +333,17 @@
     .case-card-content p
     {
         font-size: 1.6vw;
+    }
+    .our-companies
+    {
+        margin: 5vw 0vw;
+    }
+    .our-companies img
+    {
+        width: 30vw;
+        margin-right: 15vw;
+        filter: grayscale(0%);
+        padding: 3vw 0vw;
     }
 }
 

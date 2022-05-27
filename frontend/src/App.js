@@ -20,12 +20,14 @@ import Methodology from './Pages/Methodology/Methodology';
 import Artificial from './Pages/Services/Components/Artificial'
 import InsightsData from './Pages/Services/Components/InsightsData';
 import NotFound from './Pages/PageNotFound/NotFound';
+import CookieNotification from './Pages/Home/Cookie/CookieNotification';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Header />
+        <CookieNotification />
         <Routes>
         <Route path='/' element={<HomePage />} />
           <Route path='/expertise' element={<Expertise />} />

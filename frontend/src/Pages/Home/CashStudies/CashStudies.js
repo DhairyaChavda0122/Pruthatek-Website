@@ -85,18 +85,6 @@ function CashStudies() {
         },
     ]
 
-    const images = imageSource.map((item, index) => {
-        return (
-            <div className='cashStudiesCard' key={index}>
-                <img src={item.img} alt='case-study' />
-                <div className='cash-studies-text'>
-                    <p>{item.heading}</p>
-                    <p>{item.txt}</p>
-                </div>
-            </div>
-        );
-    })
-
     /*  Hovering Images gets colored up */
     const hoverImg = [
         {
@@ -146,15 +134,6 @@ function CashStudies() {
         }
     ];
 
-    const blackImages = hoverImg.map((image, index) => {
-        return (
-            <>
-                <img src={image.img_black} alt="black" className='blackImg' key={index} />
-                <img src={image.img} alt="color" className='colorImg' key={image.id} />
-            </>
-        )
-    });
-
     return (
             <section className='cash-studies'>
                 <div className="information dfc">
@@ -175,9 +154,11 @@ function CashStudies() {
                 </Slider>
                 </div>
                 <marquee>
-                <div className='hoverImages'>
-                    {blackImages}
-                </div>
+                    <div className="our-companies">
+                        {hoverImg.map((imag,index) => (
+                            <img src={imag.img} alt="Company" key={index} />
+                        ))}
+                    </div>
                 </marquee>
             </section>
         

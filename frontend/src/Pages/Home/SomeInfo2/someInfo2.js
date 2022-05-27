@@ -14,7 +14,7 @@ function SomeInfo2(){
 
                 {/*  Division to create a blurry border  */}
                 <div className='image df'>
-                    <img src={img} alt="Image" />
+                    <img src={img} alt="info" />
                 </div>
             </div>
         </section>

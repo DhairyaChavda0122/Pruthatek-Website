@@ -2,7 +2,7 @@ import img1 from '../PlanningBusiness/image1.png';
 import img2 from '../PlanningBusiness/image2.png';
 import img3 from '../PlanningBusiness/image3.png';
 
-import React, { useState } from 'react';
+import React from 'react';
 
 /*  CSS Files   */
 import '../vars.css'
@@ -42,7 +42,7 @@ function PlanningBusiness() {
         return (
             <div className='contentDiv' key={index}>
                 <div className="image">
-                    <img src={item.img} />
+                    <img src={item.img} alt="planning-business" />
                 </div>
                 <div className="content dfc">
                     <h3>{item.h3}</h3>

@@ -74,9 +74,20 @@
 }
 @media only screen and (max-width: 768px)
 {
+    .pruthatek-FTM .img-cont
+    {
+        width: 86vw;
+        height: 50vw;
+        left: calc(50% - 43vw);
+    }
+    .flexibility
+    {
+        width: 94vw;
+        font-size: 3vw;
+    }
     .FTM-flex
     {
-        padding-top: 20vw;
+        padding-top: 35vw;
     }
     .FTM-flex div h1
     {
@@ -91,18 +102,21 @@
 {
     .FTM-flex div
     {
-        width: 60vw;
-        margin-left: calc(50% - 35vw);
+        width: 78vw;
+        margin-left: 2vw;
         margin-bottom: 4vw;
     }
     .FTM-flex div h1
     {
-        font-size: 2.7vw;
+        font-size: 4vw;
+        font-weight: 900;
         margin-bottom: 1vw;
     }
     .FTM-flex div p
     {
-        font-size: 1.6vw;
+        font-weight: 400;
+        font-size: 2.6vw;
+        text-align: justify;
     }
     .engagement-models .details
     {

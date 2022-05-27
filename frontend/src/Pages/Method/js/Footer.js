@@ -135,11 +135,11 @@ const Footer = () => {
                   </div>
                   <div className="col-4">
                     Singapore
-                    <span className="text-muted font-size-smaller"> Ontario,Canada</span>
+                    <p className="text-muted font-size-smaller">Singapore</p>
                   </div>
                   <div className="col-4">
                     Australia
-                    <span className="text-muted font-size-smaller"> Ontario,Canada</span>
+                    <p className="text-muted font-size-smaller">Victoria, -3166</p>
                   </div>
                 </div>
               </div>
