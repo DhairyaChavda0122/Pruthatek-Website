@@ -37,7 +37,7 @@ function ClientsReview(){
                     <div className='backDesign' />
                 </div>
                 <div className='review-info'>
-                    <img alt="quote" />
+                    <img src="Pictures/Quote Icon.png" alt="quote" />
                     <h2>{rev.title}</h2>
                     <p>{rev.description}</p>
                     <div className='stars'>

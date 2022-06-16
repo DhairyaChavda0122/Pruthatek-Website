@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './../Styles/QualityManagement.css'
 import CommonCard from './CommonCard';
 import data from './../JSON/QualityManagementData.json'
@@ -7,9 +7,9 @@ import EndingInfo from './EndingInfo';
 
 function QualityManagement(props) {
     document.title = "Quality Management"
-    useEffect(() => {
-        window.scrollTo(0,0)
-    },[])
+    // useEffect(() => {
+    //     window.scrollTo(0,0)
+    // },[])
     const mainInfoData = {
         imgPath : "Pictures/QM_1.png",
         title: "QMS TASKS & OBJECTIVES",
@@ -46,8 +46,8 @@ function QualityManagement(props) {
         <>
             {/* Quality Management Top Components */}
             <div className="qulty-mngmnt">
-                <h1 className="qulty-mngmnt-title">Quality Management</h1>
-                <p className="qulty-desc">PruthaTek has put in place a Quality Management System(QMS) comprising a complex set of engineering and managerial activities that ensure bespoke quality of delivered  software throughout the entire workflow.</p>
+                <h1 className="qulty-mngmnt-title" data-aos="fade-up">Quality Management</h1>
+                <p className="qulty-desc" data-aos="fade-up" data-aos-delay="200">PruthaTek has put in place a Quality Management System(QMS) comprising a complex set of engineering and managerial activities that ensure bespoke quality of delivered  software throughout the entire workflow.</p>
             </div>
 
             <MainInfo data={mainInfoData} />

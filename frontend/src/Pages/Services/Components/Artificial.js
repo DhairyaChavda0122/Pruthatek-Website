@@ -34,7 +34,7 @@ function AI(props) {
             </div>
             <div className="business-cont-flex-container">
                 {AIdata.map((data, index) => (
-                    <CommonCard data={data} />
+                    <CommonCard data={data} key={index} />
                 ))}
             </div>
             {/* Our AI consulting services */}
@@ -42,11 +42,11 @@ function AI(props) {
                 <h2>Our Artificial Intelligence Consulting Services</h2>
                 <div className="consulting-card-container">
                     {ConsltingData.map((consult, index) => (
-                        <div className="consulting-card">
+                        <div className="consulting-card" key={index} >
                             <p className="consultancy-title">{consult.consultancyTitle}</p>
                             <p className="consultancy-desc">{consult.consultancyDesc}</p>
                             {consult.consultancyPoints.map((point, index) => (
-                                <p className="consultancy-point"><GiCheckMark />&nbsp;&nbsp;&nbsp;{point}</p>
+                                <p className="consultancy-point" key={index} ><GiCheckMark />&nbsp;&nbsp;&nbsp;{point}</p>
                             ))}
                         </div>
                     ))}

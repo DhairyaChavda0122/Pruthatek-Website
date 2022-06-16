@@ -3,45 +3,12 @@ import '../CashStudies/CashStudiesCSS.css';
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Marquee from "react-fast-marquee";
+import { settings } from '../SliderSetting/Setting';
 
 function CashStudies() {
     /*  Main Images */
-    const settings = {
-        dots: false,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 700,
-        autoplaySpeed: 5000,
-        cssEase: "linear",
-        pauseOnHover: false,
-        responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: false
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-              }
-            },
-            {
-              breakpoint: 450,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-          ]
-    };
+
     const imageSource = [
         {
             img: 'Pictures/img1.png',
@@ -131,6 +98,11 @@ function CashStudies() {
             id: 9,
             img: 'Pictures/aph.png',
             img_black: 'Pictures/aph-black.png'
+        },
+        {
+            id: 10,
+            img: 'Pictures/HARI KRISHNA LOGO.png',
+            img_black: 'Pictures/aph-black.png'
         }
     ];
 
@@ -143,7 +115,7 @@ function CashStudies() {
                 <div className="case-slick">
                 <Slider {...settings}>
                     {imageSource.map((source,index) => (
-                        <div className="case-card">
+                        <div className="case-card" key={index} >
                             <img src={source.img} alt={source.heading} />
                             <div className="case-card-content">
                                 <h3>{source.heading}</h3>
@@ -153,13 +125,13 @@ function CashStudies() {
                     ))}
                 </Slider>
                 </div>
-                <marquee>
+                <Marquee speed="100" gradient={true} gradientWidth="50px" >
                     <div className="our-companies">
                         {hoverImg.map((imag,index) => (
                             <img src={imag.img} alt="Company" key={index} />
                         ))}
                     </div>
-                </marquee>
+                </Marquee>
             </section>
         
     );

@@ -1,0 +1,37 @@
+[
+    {
+        "service-name" : "Counseling Services:",
+        "service-desc" : "Establishing an Enterprise Data Architecture methodology and a system and guide for Big Data investigation.",
+        "color" : "#1861AA"
+    },
+    {
+        "service-name" : "The Single Version Of The Truth:",
+        "service-desc" : "A solitary perspective on substances, for example, clients, items, or accomplices.",
+        "color" : "#EFA706"
+    },
+    {
+        "service-name" : "Data Modernization:",
+        "service-desc" : "Legacy data design modernization for fast data analysis and business agility.",
+        "color" : "#F25022"
+    },
+    {
+        "service-name" : "View of Business:",
+        "service-desc" : "A comprehensive perspective on business information inside the endeavor for more noteworthy information democratization, information accessibility, and status for cutting edge examination.",
+        "color" : "#8FC320"
+    },
+    {
+        "service-name" : "Actionable Insights:",
+        "service-desc" : "Advanced investigation utilizing AI procedures for client esteem examination, hazard examination, and functional analysis.",
+        "color" : "#09adca"
+    },
+    {
+        "service-name" : "Harnessing Data & Al:",
+        "service-desc" : "Businesses of today and tomorrow should dominate the specialty of offsetting business change with operational greatness and cost reduction.",
+        "color" : "#848484"
+    },
+    {
+        "service-name" : "The Shift from Data to Insights:",
+        "service-desc" : "The estimation of given data can be set up; instead is set up through the research directed on it and the moves made because of the investigation.",
+        "color" : "#000000"
+    }    
+]

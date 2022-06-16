@@ -21,15 +21,27 @@ import Artificial from './Pages/Services/Components/Artificial'
 import InsightsData from './Pages/Services/Components/InsightsData';
 import NotFound from './Pages/PageNotFound/NotFound';
 import CookieNotification from './Pages/Home/Cookie/CookieNotification';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
+import ScrollToTop from './Pages/Company/Components/ScrollToTop';
 
 function App() {
+  useEffect(() => {
+    // window.scrollTo(0, 0)
+    Aos.init({
+      duration: 1400,
+      offset: 100,
+    })
+  })
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Header />
         <CookieNotification />
         <Routes>
-        <Route path='/' element={<HomePage />} />
+          <Route path='/' element={<HomePage />} />
           <Route path='/expertise' element={<Expertise />} />
           <Route path='/methodology' element={<Methodology />} />
           <Route path='/mobile-app' element={<MobileApp />} />

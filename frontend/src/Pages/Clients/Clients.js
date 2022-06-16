@@ -24,7 +24,7 @@ function Clients(props) {
             </svg>
             <div className="clients-list">
                 {clients.map((client, index) => (
-                    <div className="client">
+                    <div className="client" key={index} >
                         <img src={client.imgPath} alt="company-logo" />
                     </div>
                 ))}
