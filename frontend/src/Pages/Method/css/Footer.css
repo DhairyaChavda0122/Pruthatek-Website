@@ -1,3 +1,25 @@
 .font-size-smaller{
     font-size:smaller !important;
 }
+.country-mail
+{
+    text-decoration: none;
+    text-transform: lowercase !important;
+}
+.set-border
+{
+    border-right: 2px solid gray;
+}
+.social-media-footer svg
+{
+    filter: grayscale(100%);
+    transition: all 400ms;
+}
+.social-media-footer svg:hover
+{
+    filter: grayscale(0%);
+}
+.countries img
+{
+    box-shadow: 0px 0px 12px gray;
+}

@@ -1,12 +1,13 @@
 import React from 'react';
 import './../Styles/Blog.css'
 import LatestBlogcard from './LatestBlogcard';
-import blogsData from './../JSON/blogsData.json'
-import BlogPost from '../../Home/BlogPost/BlogPost';
-import Hzline from '../../Company/Components/Hzline';
+import { blogsData } from '../JSON/blogsData';
+// import BlogPost from '../../Home/BlogPost/BlogPost';
+// import Hzline from '../../Company/Components/Hzline';
 
 function Blog(props) {
     document.title = "Blogs"
+    console.log(blogsData)
     return (
         <div className="pruthatek-blogs">
             <div className="qulty-mngmnt">
@@ -21,31 +22,41 @@ function Blog(props) {
                     </div>
                 </div>
                 <div className="QMA-tasks">
-                    <h2>CATEGORIES</h2>
-                    <ul>
-                        <li>All</li>
-                        <li>Mobile App Development</li>
-                        <li>Web Development</li>
-                        <li>Start Up's</li>
-                        <li>DevOps</li>
-                    </ul>
+                    <p>We have various categories of blogs for you . You can get Daily new updates and knowledge from the blogs.</p>
                 </div>
             </div>
             <br />
             {/* Latest Blogs */}
             <div className="latest-blogs">
                 <h2>Latest Blogs</h2>
-                <div className="latest-blogs-container">
-                    {blogsData.map((blog, index) => (
-                        <LatestBlogcard data={blog} />
-                    ))}
+                <div className="Category-Blogs-Cont">
+                    <div className="categories" >
+                        <h2>Categories</h2>
+                        <ul className="ps-4" >
+                            <li>All</li>
+                            <li>Big Data &amp; BI</li>
+                            <li>Cloud</li>
+                            <li>General</li>
+                            <li>Java</li>
+                            <li>Microsoft Technologies</li>
+                            <li>Mobile</li>
+                            <li>SharePoint Development</li>
+                            <li>Software Development</li>
+                            <li>Software Testing</li>
+                        </ul>
+                    </div>
+                    <div className="latest-blogs-container">
+                        {blogsData.map((blog, index) => (
+                            <LatestBlogcard data={blog} key={index} />
+                        ))}
+                    </div>
                 </div>
             </div>
-            <BlogPost />
+            {/* <BlogPost /> */}
             {/* hover cards */}
-            <div className="hover-cards-container">
+            {/* <div className="hover-cards-container">
                 {blogsData.slice(0, 3).map((blog, index) => (
-                    <div className="hover-cards">
+                    <div className="hover-cards" key={index} >
                         <img src={blog.tempImg} alt="hover-images" />
                         <div className="hover-card-data">
                             <p>{blog.title}</p>
@@ -55,7 +66,7 @@ function Blog(props) {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> */}
         </div>
     );
 }

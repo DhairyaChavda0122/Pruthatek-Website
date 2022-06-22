@@ -1,3 +1,11 @@
+.client-review
+{
+    margin-bottom: 7vw;
+}
+.client-review .slick-slider
+{
+    padding-left: 0px;
+}
 .client-review .information h2{
     font-size: 34px;
     font-family: var(--font-b);
@@ -18,8 +26,11 @@
     overflow-x: hidden;
 }
 
-.client-review .review .reviewsList{
-    min-width: 100vw;
+.client-review .reviewsList{
+    /* min-width: 100vw; */
+    display: flex !important;
+    justify-content: flex-start;
+    margin: 2vw 12vw;
 }
 
 /*  ----------   Slider Buttons  ----------  */
@@ -40,9 +51,9 @@
 }
 
 /*  Division with an image  */
-.client-review .review-photo{
-    margin-left: 5%;
-}
+/* .client-review .review-photo{
+    /* margin-left: 5%; 
+} */
 
 /*  Division to create a blurry border  */
 .client-review .review-photo .image{
@@ -55,8 +66,8 @@
 }
 /*  Main Image  */
 .client-review .review-photo .image img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    /* height: 200px; */
     z-index: 11;
 }
 
@@ -72,47 +83,47 @@
 
  
 /* ---  Reviews By Customer --- */
-.client-review .review .review-info{
-    width: 37%;
+.client-review .review-info{
+    width: 50%;
     margin-left: 8%;
     align-self: flex-start;
 }
 
 /*  Reviews exclamation mark image  */
-.client-review .review .review-info img{
+.client-review .review-info img{
     width: 80px;
     height: 80px;
 }
 
 /*  Review Title    */
-.client-review .review .review-info h2{
+.client-review .review-info h2{
     color: var(--lg-blue);
     margin: 10px 0;
 }
 /*  Review Description    */
-.client-review .review .review-info p{
+.client-review.review-info p{
     color: var(--grey);
     font-size: 14px;
 }
 
 /*  Stars Div    */
-.client-review .review .review-info .stars{
+.client-review .review-info .stars{
     margin: 15px 0;
 }
 /*  Stars icon  */
-.client-review .review .review-info .stars i{
+.client-review .review-info .stars i{
     font-size: 15px;
     color: var(--yellow);
     margin-right: 10px;
 }
 
 /*  Name of Reviewer  */
-.client-review .review .review-info h4{
+.client-review .review-info h4{
     width: fit-content;
     font-size: 16px;
 }
 /*  Designation of Reviewer  */
-.client-review .review .review-info span{
+.client-review .review-info span{
     margin-left: 7px;
     color: var(--grey);
     font-weight: normal;
@@ -153,7 +164,7 @@
         height: 210px;
     }
 
-    .client-review .review .review-info img{
+    .client-review .review-info img{
         width: 65px;
         height: 65px;
     }
@@ -176,14 +187,14 @@
         width: 40%;
     }
 
-    .client-review .review .review-info img{
+    .client-review .review-info img{
         width: 60px;
         height: 60px;
     }
-    .client-review .review .review-info h2{
+    .client-review .review-info h2{
         font-size: 22px;
     }
-    .client-review .review .review-info p{
+    .client-review .review-info p{
         font-size: 13px;
     }
 }
@@ -215,18 +226,22 @@
         margin-top: -83%;
     }
 
-    .client-review .review .review-info h2{
+    .client-review .review-info h2{
         font-size: 21px;
     }
-    .client-review .review .review-info p{
+    .client-review .review-info p{
         font-size: 12.5px;
     }
+    /* .client-review .reviewsList{
+        justify-content: flex-start;
+        /* margin: 2vw 12vw; 
+    } */
 }
 
 /*  :::   520px   :::  */
 @media (max-width: 520px) {
     .client-review{
-        margin-bottom: -20px;
+        margin-bottom: 12vw;
     }
     .client-review .information h2{
         font-size: 27px;
@@ -239,11 +254,12 @@
     .client-review .review{
         margin-top: 30px;
     }
-    .client-review .review .reviewsList{
+    .client-review .reviewsList{
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        margin: 3vw 0vw;
     }
 
     .client-review .review-photo .image{
@@ -252,7 +268,7 @@
         border-radius: 50px;
     }
     .client-review .review-photo .image img{
-        width: 110px;
+        width: 55vw;
         height: 110px;
     }
     .client-review .review-photo .backDesign{
@@ -263,18 +279,18 @@
         margin-top: -83%;
     }
 
-    .client-review .review .review-info{
+    .client-review .review-info{
         margin-top: 20px;
         width: 70vw;
         margin-left: 16vw;
     }
-    .client-review .review .review-info img{
+    .client-review .review-info img{
         display: none;
     }
-    .client-review .review .review-info h2{
+    .client-review .review-info h2{
         font-size: 20px;
     }
-    .client-review .review .review-info .stars{
+    .client-review .review-info .stars{
         margin: 13px 0 12px;
     }
 }
@@ -283,7 +299,7 @@
 @media (max-width: 425px) {
     .client-review{
         margin-top: 70px;
-        margin-bottom: -40px;
+        margin-bottom: 12vw;
     }
     .client-review .information h2{
         font-size: 23px;
@@ -299,14 +315,14 @@
         border-radius: 45px;
     }
 
-    .client-review .review .sliderBtns button{
+    .client-review .sliderBtns button{
         font-size: 20px;
     }
 
-    .client-review .review .review-info p{
+    .client-review .review-info p{
         font-size: 12.35px;
     }
-    .client-review .review .review-info .stars{
+    .client-review .review-info .stars{
         margin: 11px 0 10px;
     }
 }
@@ -325,11 +341,11 @@
         font-size: 12.3px;
     }
 
-    .client-review .review .sliderBtns button{
+    .client-review .sliderBtns button{
         font-size: 18px;
     }
 
-    .client-review .review .review-info p{
+    .client-review .review-info p{
         font-size: 12.2px;
     }
 }
@@ -366,25 +382,25 @@
         border-radius: 40px;
     }
 
-    .client-review .review .sliderBtns button{
+    .client-review .sliderBtns button{
         font-size: 18px;
     }
 
-    .client-review .review .review-info h2{
+    .client-review .review-info h2{
         font-size: 19px;
         margin-bottom: 5px;
     }
-    .client-review .review .review-info p{
+    .client-review .review-info p{
         font-size: 10.4px;
     }
-    .client-review .review .review-info .stars{
+    .client-review .review-info .stars{
         margin: 11px 0 10px;
     }
 
-    .client-review .review .review-info h4{
+    .client-review .review-info h4{
         font-size: 14px;
     }    
-    .client-review .review .review-info span{
+    .client-review .review-info span{
         font-size: 12px;
     }   
 }

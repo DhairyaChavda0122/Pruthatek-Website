@@ -25,6 +25,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
 import ScrollToTop from './Pages/Company/Components/ScrollToTop';
+import DetailedBlog from './Pages/Blog/Components/DetailedBlog';
 
 function App() {
   useEffect(() => {
@@ -49,6 +50,7 @@ function App() {
           <Route path='/quality-management' element={<QualityManagement />} />
           <Route path='/engagement-models' element={<Engagement />} />
           <Route path='/contact-us' element={<Contact />} />
+          <Route path='/blogs/:title' element={<DetailedBlog />} />
           <Route path='/blogs' element={<Blog />} />
           <Route path='/clients' element={<Clients />} />
           <Route path='/Artificial-Intelligence' element={<Artificial />} />

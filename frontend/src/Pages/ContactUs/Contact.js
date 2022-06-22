@@ -67,12 +67,12 @@ function Contact(props) {
                             <p>+91 9909 918 930</p>
                         </div>
                         <div className="individual-contact">
-                            <GrMail style={{ color: "green" }} /><span className="contact-title">E-mail</span>
-                            <p>info@pruthatek.com</p>
+                            <GrMail style={{ color: "green" }} /><span className="contact-title">E-mail</span><br/>
+                            <p><a href="mailto:info@pruthatek.com" >info@pruthatek.com</a></p>
                         </div>
                         <div className="individual-contact">
                             <ImLocation style={{ color: "blue" }} /><span className="contact-title">Location</span>
-                            <p>G-10 Parasmant Flat, Nr. Karmachari Nagar Rannapark, Ahmedabad - 380061</p>
+                            <p>G-10 Parasmani Flat,<br/> Nr. Karmachari Nagar Rannapark,<br/> Ahmedabad - 380061</p>
                         </div>
                     </div>
 

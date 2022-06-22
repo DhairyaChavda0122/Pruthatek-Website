@@ -1,128 +1,171 @@
-.pruthatek-blogs
-{
-    margin-top: 8vw;
-    /* text-align: center; */
+.pruthatek-blogs {
+  margin-top: 2vw;
+  /* text-align: center; */
 }
-.pruthatek-blogs .QMA-tasks
-{
-    margin-top: 7vw;
-    margin-left: -4vw;
+.pruthatek-blogs .QMA-tasks {
+  margin-top: 7vw;
+  margin-left: -4vw;
 }
-.pruthatek-blogs .QMA-tasks h2
-{
-    margin-left: 1vw;
-    margin-bottom: 1.6vw;
-    color: gray;
-    font-weight: bolder;
+.pruthatek-blogs .QMA-tasks h2 {
+  margin-left: 1vw;
+  margin-bottom: 1.6vw;
+  color: gray;
+  font-weight: bolder;
 }
 .pruthatek-blogs .company_people-img,
-.pruthatek-blogs .shadow
-{
-    height: 20vw;
-    width: 20vw;
+.pruthatek-blogs .shadow {
+  height: 20vw;
+  width: 20vw;
 }
-.pruthatek-blogs .latest-blogs
-{
-    margin-top: 12vw;
+.pruthatek-blogs .latest-blogs {
+  margin-top: 12vw;
 }
-.pruthatek-blogs .latest-blogs h2
-{
-    text-align: center;
-    font-weight: 900;
+.pruthatek-blogs .latest-blogs h2 {
+  text-align: center;
+  font-weight: 900;
 }
-.latest-blogs-container
-{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 3vw 5vw;
+.latest-blogs-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* margin: 3vw 5vw; */
 }
-.hover-cards
-{
-    width: 23vw;
-    border-radius: 12px;
-    position: relative;
-    margin-left: 5vw;
-    overflow: hidden;
+.hover-cards {
+  width: 23vw;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
 }
-.hover-cards img
-{
-    border-radius: 18px;
-    width: 100%;
-    height: 100%;
+.hover-cards img {
+  border-radius: 18px;
+  width: 100%;
+  height: 100%;
 }
-.hover-card-data
-{
-    position: absolute;
-    width: 100%;
-    bottom: 5px;
-    left: 0;
-    font-size: 1vw;
-    color: white;
-    background: linear-gradient(rgba(255, 255, 255, 0.055),rgba(255, 8, 0, 0.24));
-    padding : 15vw 2vw 0vw 2vw;
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 500ms;
+.hover-card-data {
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+  left: 0;
+  font-size: 1vw;
+  color: white;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.055),
+    rgba(255, 8, 0, 0.24)
+  );
+  padding: 15vw 2vw 0vw 2vw;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 500ms;
 }
-.hover-cards:nth-child(2) .hover-card-data
-{
-    padding : 15vw 2vw 0vw 2vw;
-    background: linear-gradient(rgba(255, 255, 255, 0.055),rgba(0, 81, 255, 0.24));
+.hover-cards:nth-child(2) .hover-card-data {
+  padding: 15vw 2vw 0vw 2vw;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.055),
+    rgba(0, 81, 255, 0.24)
+  );
 }
-.hover-cards:nth-child(3) .hover-card-data
-{
-    padding : 15vw 2vw 0vw 2vw;
-    background: linear-gradient(rgba(255, 255, 255, 0.055),rgba(0, 255, 128, 0.24));
+.hover-cards:nth-child(3) .hover-card-data {
+  padding: 15vw 2vw 0vw 2vw;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.055),
+    rgba(0, 255, 128, 0.24)
+  );
 }
-.hover-cards-container
+.hover-cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2vw 5vw;
+}
+.hover-cards:hover .hover-card-data {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* Harshil -> Category-flex */
+.Category-Blogs-Cont
 {
     display: flex;
     justify-content: space-between;
     margin: 2vw 5vw;
+    position: relative;
+    align-items: flex-start;
 }
-.hover-cards:hover .hover-card-data
+.Category-Blogs-Cont .categories
 {
-    opacity: 1;
-    transform: translateY(0px);
+    /* background-color: rgba(128, 128, 128, 0.336); */
+    width: 42vw;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 5vw;
+    border-top: 5px solid #368dc5;
+    border-left: 1px solid black;
+    border-bottom: 5px solid #368dc5;
+    border-right: 1px solid black;
+    margin-top: 3vw;
+    margin-right: 3vw;
+    padding: 2vw;
 }
-@media only screen and (max-width: 800px)
+.Category-Blogs-Cont .categories h2
 {
-    .latest-blogs
+    text-align: left !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .latest-blogs {
+    margin-bottom: 14vw;
+  }
+  .latest-blogs-container {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 768px) 
+{
+    .Category-Blogs-Cont
     {
-        margin-bottom: 14vw;
+        flex-direction: column;
     }
-    .latest-blogs-container
+    .Category-Blogs-Cont .categories
     {
-        flex-wrap: wrap;
+        position: relative;
+        margin-bottom: 5vw;
+        width: 100%;
     }
 }
-@media only screen and (max-width: 500px)
-{
-    .latest-blogs-container
-    {
-        display: flex;
-        justify-content: center;
-    }
-    .hover-cards-container
-    {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .hover-cards
-    {
-        width: 60vw;
-        margin-top: 5vw;
-    }
-    .hover-card-data
-    {
-        font-size: 2.5vw;
-    }
-    .pruthatek-blogs .QMA-tasks
-    {
-        margin-left: 10vw;
-    }
+@media only screen and (max-width: 500px) {
+  .latest-blogs-container {
+    display: flex;
+    justify-content: center;
+  }
+  .hover-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hover-cards {
+    width: 60vw;
+    margin-top: 5vw;
+  }
+  .hover-card-data {
+    font-size: 2.5vw;
+  }
+  .pruthatek-blogs .QMA-tasks {
+    margin-left: 10vw;
+  }
+  .pruthatek-blogs .company_people-img,
+  .pruthatek-blogs .shadow {
+    height: 30vw;
+    width: 30vw;
+  }
+  .pruthatek-blogs .QMA-tasks {
+    margin-top: 20vw;
+    margin-left: 15vw;
+    font-size: 2rem;
+  }
+  .pruthatek-blogs .latest-blogs
+  {
+      margin-top: 4vw;
+  }
 }

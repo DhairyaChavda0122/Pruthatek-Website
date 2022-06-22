@@ -48,7 +48,7 @@ function PlanningBusiness() {
                     <h3>{item.h3}</h3>
                     <h1>{item.title}</h1>
                     <p>{item.desc}</p>
-                    <button>{item.btn} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i className="bi bi-arrow-right"></i></button>
+                    <a href="mailto:info@pruthatek.Com" >{item.btn} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i className="bi bi-arrow-right"></i></a>
                 </div>
             </div>
         )

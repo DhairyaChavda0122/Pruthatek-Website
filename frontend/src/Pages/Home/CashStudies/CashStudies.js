@@ -107,14 +107,14 @@ function CashStudies() {
     ];
 
     return (
-            <section className='cash-studies'>
-                <div className="information dfc">
-                    <h3>Case Studies</h3>
-                    <p>Explore how Pruthatek shaped multiple businesse with creativity and innovative technology.</p>
-                </div>
-                <div className="case-slick">
+        <section className='cash-studies'>
+            <div className="information dfc">
+                <h3>Case Studies</h3>
+                <p>Explore how Pruthatek shaped multiple businesse with creativity and innovative technology.</p>
+            </div>
+            <div className="case-slick">
                 <Slider {...settings}>
-                    {imageSource.map((source,index) => (
+                    {imageSource.map((source, index) => (
                         <div className="case-card" key={index} >
                             <img src={source.img} alt={source.heading} />
                             <div className="case-card-content">
@@ -124,16 +124,16 @@ function CashStudies() {
                         </div>
                     ))}
                 </Slider>
+            </div>
+            <Marquee speed="100" gradient={true} gradientWidth="50px" >
+                <div className="our-companies">
+                    {hoverImg.map((imag, index) => (
+                        <img src={imag.img} alt="Company" key={index} />
+                    ))}
                 </div>
-                <Marquee speed="100" gradient={true} gradientWidth="50px" >
-                    <div className="our-companies">
-                        {hoverImg.map((imag,index) => (
-                            <img src={imag.img} alt="Company" key={index} />
-                        ))}
-                    </div>
-                </Marquee>
-            </section>
-        
+            </Marquee>
+        </section>
+
     );
 }
 

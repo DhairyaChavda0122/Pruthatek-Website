@@ -39,7 +39,7 @@
     min-width: 100vw;
     max-width: 100vw;
     /* height: 100vh; */
-    margin-top: 8vw;
+    margin-top: 3vw;
     background-color: #fff;
     display: grid;
     grid-template-columns: 30% 45%;
@@ -73,7 +73,8 @@
     font-size: 12px;
     margin: 10px 0 40px;
 }
-.planning-business .contentDiv button{
+.planning-business .contentDiv a{
+    text-decoration: none;
     padding: 12px 40px;
     border: none;
     border-radius: 20px;

@@ -48,6 +48,16 @@
     border: none;
     border-bottom: .5px solid rgb(201, 201, 201)
 }
+/* ------------ Blog Posts Harshil -------------- */
+.homepage-blog-posts .latest-blog-card
+{
+    margin-top: 0vw;
+    width: 26vw;
+}
+.homepage-blog-posts .latest-blogs-container
+{
+  margin: 2vw 5vw;
+}
 
 /*  Blog card footer  */
 .blog-post .card .card-footer{
@@ -209,7 +219,21 @@
         font-size: 14px;
     }    
 }
+@media (max-width : 600px) 
+{
+    .homepage-blog-posts .latest-blog-card
+    {
+        width: 60vw;
+        margin-top: 4vw;
+    }
+    .homepage-blog-posts .latest-blogs-container
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
+    }
+}
 /*  :::   520px   :::  */
 @media (max-width: 520px) {
     .blog-post .information h2{

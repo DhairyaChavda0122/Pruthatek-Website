@@ -4,7 +4,7 @@
     font-family: 'Roboto', sans-serif;
     letter-spacing: 8px;
     text-align: center;
-    margin: 8vw 0vw 3vw 0vw;
+    margin: 2vw 0vw 1vw 0vw;
     font-size: 2.5vw;
 }
 .contact-us-page
@@ -71,7 +71,7 @@
 .contact-details .individual-contact
 {
     margin-top: 2vw;
-    width: 15vw;
+    width: 20vw;
     font-family: 'Roboto', sans-serif;
     font-size: 1vw;
 }
@@ -141,7 +141,7 @@
 {
     .contact-us
     {
-        margin: 12vw 0vw 2vw 0vw;
+        margin: 2vw 0vw 2vw 0vw;
     }
 }
 
@@ -164,13 +164,13 @@
         height: 34vw;
         top: calc(50% - 17vw);
     }
-    .contact-form
+    /* .contact-form
     {
-        height: 23vw;
-    }
+        /* height: 23vw; 
+    } */
     .contact-us
     {
-        margin-top: 19vw;
+        margin-top: 2vw;
         font-size: 3vw;
     }
 }
@@ -178,18 +178,19 @@
 {
     .contact-us
     {
-        font-size: 3.3vw;
+        font-size: 3vw;
     }
     .contact-flex-container
     {
-        display: block;
+        /* display: block; */
+        flex-direction: column;
         margin-top: 6vw;
     }
     .contact-form
     {
         width: 40vw;
         margin: 0vw auto;
-        height: 31vw;
+        /* height: 31vw; */
     }
     .contact-form button
     {
@@ -212,7 +213,7 @@
     {
         width: 60vw;
         margin: 3vw auto;
-        margin-top: 17vw;
+        margin-top: 4vw;
     }
     .contact-details .individual-contact
     {
@@ -234,7 +235,7 @@
     .contact-form
     {
         width: 55vw;
-        height: 45vw;
+        /* height: 45vw; */
     }
     .contact-form textarea
     {
@@ -274,10 +275,10 @@
 {
     .inside-flex-cont
     {
-        margin-top: 20vw;
+        margin-top: 5vw;
     }
     .contact-us
     {
-        margin-top: 25vw;
+        margin-top: 2vw !important;
     }
 }

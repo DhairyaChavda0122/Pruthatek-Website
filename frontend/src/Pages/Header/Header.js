@@ -40,7 +40,7 @@ const Header = () => {
                         <Link to="/methodology" className="text-dec-none development-border">Development</Link>
                       </li>
                       <li>
-                        <Link to="/" className="text-dec-none" onClick={() => handleClick()}>Enterprise Software Development</Link>
+                        <Link to="/" className="text-dec-none">Enterprise Software Development</Link>
                       </li>
                       <li>
                         <Link to="/" className="text-dec-none" onClick={() => handleClick()}>Web Application Development</Link>
