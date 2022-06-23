@@ -1,5 +1,5 @@
 .pruthatek-blogs {
-  margin-top: 2vw;
+  /* margin-top: 2vw; */
   /* text-align: center; */
 }
 .pruthatek-blogs .QMA-tasks {
@@ -18,7 +18,7 @@
   width: 20vw;
 }
 .pruthatek-blogs .latest-blogs {
-  margin-top: 12vw;
+  margin-top: 0vw;
 }
 .pruthatek-blogs .latest-blogs h2 {
   text-align: center;

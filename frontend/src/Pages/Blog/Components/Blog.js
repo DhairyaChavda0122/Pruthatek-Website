@@ -10,7 +10,7 @@ function Blog(props) {
     console.log(blogsData)
     return (
         <div className="pruthatek-blogs">
-            <div className="qulty-mngmnt">
+            {/* <div className="qulty-mngmnt">
                 <h1 className="qulty-mngmnt-title">software development insights</h1>
                 <p className="qulty-desc">Our versatile and industry-driven experience has opened doors of opportunities for global businesses. Untap the true potential of our technology experts who have penned down their viewpoints through these blogs.</p>
             </div>
@@ -24,7 +24,7 @@ function Blog(props) {
                 <div className="QMA-tasks">
                     <p>We have various categories of blogs for you . You can get Daily new updates and knowledge from the blogs.</p>
                 </div>
-            </div>
+            </div> */}
             <br />
             {/* Latest Blogs */}
             <div className="latest-blogs">
