@@ -26,6 +26,7 @@ import 'aos/dist/aos.css'
 import { useEffect } from 'react';
 import ScrollToTop from './Pages/Company/Components/ScrollToTop';
 import DetailedBlog from './Pages/Blog/Components/DetailedBlog';
+// import WebAppDev from './Pages/WebApp/WebAppDev';
 
 function App() {
   useEffect(() => {
@@ -55,6 +56,7 @@ function App() {
           <Route path='/clients' element={<Clients />} />
           <Route path='/Artificial-Intelligence' element={<Artificial />} />
           <Route path='/Insights-and-Data' element={<InsightsData />} />
+          {/* <Route path='/WebAppDev' element={<WebAppDev />} /> */}
           <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />

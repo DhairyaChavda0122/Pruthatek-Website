@@ -14,7 +14,7 @@ const DetailedBlog = (props) => {
     console.log(tableOfContent)
     return (
         <div className="detailed-blog">
-            <div className="categories" >
+            <div className="categories" data-aos="fade-up" >
                 <h2>Categories</h2>
                 <ul className="ps-4" >
                     <li>All</li>
@@ -43,7 +43,7 @@ const DetailedBlog = (props) => {
                     ))}
                 </div>
                 {/* Table of Content */}
-                <div data-aos="fade-in" data-aos-delay="150">
+                <div data-aos="fade-up" data-aos-delay="150">
                     <h5 className="fw-bold" >Table of Content</h5>
                     <ol className="ps-3">
                         {tableOfContent.map((tableCont, index) => (

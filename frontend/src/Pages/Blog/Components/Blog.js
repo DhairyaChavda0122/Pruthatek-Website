@@ -29,7 +29,7 @@ function Blog(props) {
             {/* Latest Blogs */}
             <div className="latest-blogs">
                 <h2>Latest Blogs</h2>
-                <div className="Category-Blogs-Cont">
+                <div className="Category-Blogs-Cont" >
                     <div className="categories" >
                         <h2>Categories</h2>
                         <ul className="ps-4" >
@@ -51,6 +51,7 @@ function Blog(props) {
                         ))}
                     </div>
                 </div>
+                {/* <img src="Pictures/WebApp/Image.jpg" alt="Laptop" /> */}
             </div>
             {/* <BlogPost /> */}
             {/* hover cards */}

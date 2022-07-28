@@ -133,6 +133,8 @@ const Footer = () => {
                     <span className="mb-0" >India</span>&nbsp;
                     <span className="text-muted font-size-smaller mb-0" >(Head Office)</span>
                     <p className="text-muted font-size-smaller mb-0" >G-10 Parasmani Flat,<br />Nr. Karmachari Nagar,<br/> Rannapark,Ahmedabad-380061</p>
+                    <a href="mailto:info@pruthatek.com" className="country-mail font-size-smaller m-0">info@pruthatek.com</a>
+                    <p className="text-muted font-size-smaller mb-0">M.-+91 9909 918 930</p>
                   </div>
                   <div className="col-6 col-xl-6 mb-3 ms-xl-3">
                     <img src="/Pictures/canada.png" className="mb-2" style={{ width: "2rem" }} alt="india" />

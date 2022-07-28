@@ -7,7 +7,7 @@ function LatestBlogcard(props) {
     console.log(props.data)
     const blogTitle = props.data.title.replace(/ /g,"-");
     return (
-        <div className="latest-blog-card">
+        <div className="latest-blog-card" data-aos="fade-up" >
             <Link to={`/blogs/${blogTitle}`} state={props.data} >
                 <img src={props.data.imgPath} alt="blog-img" />
                 <div className="blog-data">

@@ -228,14 +228,14 @@
 {
     padding: 1px 20px;
 }
-.row-title:hover
+/*.row-title:hover
 {
-    background-color: #1861AA;
+    /* background-color: #1861AA; 
 }
 .row-title:hover .row-title-text
 {
-    color: white;
-}
+    /* color: white; 
+}*/
 .frequent-ask-que .row-content-text
 {
     font-size: 1.1vw !important;

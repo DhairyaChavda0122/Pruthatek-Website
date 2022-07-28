@@ -1,7 +1,7 @@
-.pruthatek-blogs {
-  /* margin-top: 2vw; */
-  /* text-align: center; */
-}
+/*.pruthatek-blogs {
+  /* margin-top: 2vw; 
+  /* text-align: center; 
+}*/
 .pruthatek-blogs .QMA-tasks {
   margin-top: 7vw;
   margin-left: -4vw;
@@ -19,6 +19,7 @@
 }
 .pruthatek-blogs .latest-blogs {
   margin-top: 0vw;
+  margin-bottom: 5vw;
 }
 .pruthatek-blogs .latest-blogs h2 {
   text-align: center;

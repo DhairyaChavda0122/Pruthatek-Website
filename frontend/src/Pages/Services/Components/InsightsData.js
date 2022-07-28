@@ -6,7 +6,7 @@ import './../Styles/Insights.css'
 function InsightsData(props) {
     document.title = "Insights & Data"
     return (
-        <div className="methodology" >
+        <div className="methodology Insights" >
             <div className="qulty-mngmnt">
                 <h1 className="qulty-mngmnt-title">Insights &amp; data</h1>
                 <p className="qulty-desc">Information gathering and data analysis tools give you a serious edge to savvy data at a higher speed and scale. </p>
@@ -55,10 +55,10 @@ function InsightsData(props) {
                 <div className="row overflow-hidden gx-0 mt-5 align-items-center" >
                     <div className="col-xl-1" ></div>
                     <div className="col-xl-6" >
-                        <img src="Pictures/Insights/Frame-1.png" width="100%" alt="down-arrow" className="mt-4" />
+                        <img src="Pictures/Insights/Frame-1.png" alt="down-arrow" className="mt-4 data-service-poster" />
                     </div>
                     <div className="col-xl-1" ></div>
-                    <div className="col-xl-3" >
+                    <div className="col-xl-3 benefits-points" >
                         <p><AiOutlineCheck style={{ color: "blue" }} />&nbsp;&nbsp;&nbsp;Personalized Consumer experience</p>
                         <p><AiOutlineCheck style={{ color: "#F25022" }} />&nbsp;&nbsp;&nbsp;Business Growth Driven By Targeted Analysis.</p>
                         <p><AiOutlineCheck style={{ color: "#8FC320" }} />&nbsp;&nbsp;&nbsp;Greater Business Agility.</p>
